@@ -29,6 +29,6 @@ internal class TrianguloEquilatero : Figura
     //tostring
     public override string ToString()
     {
-        return $"FIGURA TRIANGULO EQUILATERO: LADO: {_lado} COLOR:  AREA: {GetArea}";
+        return $"FIGURA TRIANGULO EQUILATERO: LADO: {_lado} COLOR:  AREA: {GetArea()}";
     }
 }

@@ -29,6 +29,6 @@ internal class Circulo : Figura
     //tostring
     public override string ToString()
     {
-        return $"FIGURA RECTANGULO: RADIO: {_radio} COLOR:  AREA: {GetArea}";
+        return $"FIGURA RECTANGULO: RADIO: {_radio} COLOR:  AREA: {GetArea()}";
     }
 }

@@ -16,6 +16,8 @@ public class P2_2_Figuras
     List<Figura> figuras = new List<Figura>();
     Rectangulo r1 = new Rectangulo(3.9, 3);
     figuras.Add(r1);
+    Rectangulo r2 = new Rectangulo(5.2, 2);
+    figuras.Add(r2);
     Circulo c1 = new Circulo(4);
     figuras.Add(c1);
     Circulo c2 = new Circulo(2);

@@ -30,6 +30,6 @@ internal class Rectangulo : Figura
     //tostring
     public override string ToString()
     {
-        return $"FIGURA RECTANGULO: BASE: {_base}  ALTURA: {_altura} COLOR:  AREA: {GetArea}";
+        return $"FIGURA RECTANGULO: BASE: {_base}  ALTURA: {_altura} COLOR:  AREA: {GetArea()}";
     }
 }
