@@ -24,7 +24,7 @@ public class P2_2_Figuras
     figuras.Add(c2);
     TrianguloEquilatero t1 = new TrianguloEquilatero(3, Color.FromArgb(255, 230, 20, 30));
     figuras.Add(t1);
-    t1 = new TrianguloEquilatero(5, Color.FromArgb(255, 60, 150, 5));
+    t1 = new TrianguloEquilatero(5, Color.FromArgb(255, 150, 150, 5));
     figuras.Add(t1);
 
 
@@ -33,9 +33,10 @@ public class P2_2_Figuras
     foreach (Figura figura in figuras)
     {
       Console.WriteLine(figura.ToString());
-      Console.WriteLine();
       suma += figura.GetArea();
-
+      figura.SetColor(245, 40, 145, 200);
+      Console.WriteLine(figura.ToString());
+      Console.WriteLine();
     }
     Console.WriteLine($"La suma total del area es: {suma}");
 
