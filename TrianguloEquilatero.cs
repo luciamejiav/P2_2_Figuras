@@ -1,12 +1,15 @@
+using System.Drawing;
+
 namespace P2_2_Figuras;
 
 internal class TrianguloEquilatero : Figura
 {
     protected double _lado;
 
-    public TrianguloEquilatero(double _lado)
+    public TrianguloEquilatero(double _lado, Color color)
     {
         this._lado = _lado;
+        this._color = color;
     }
 
     public override double GetArea()
@@ -29,6 +32,6 @@ internal class TrianguloEquilatero : Figura
     //tostring
     public override string ToString()
     {
-        return $"FIGURA TRIANGULO EQUILATERO: LADO: {_lado} COLOR:  AREA: {GetArea()}";
+        return $"FIGURA TRIANGULO EQUILATERO: LADO: {_lado} COLOR: {_color} AREA: {GetArea()}";
     }
 }

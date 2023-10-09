@@ -14,17 +14,17 @@ public class P2_2_Figuras
 
     //llamadas a las clases
     List<Figura> figuras = new List<Figura>();
-    Rectangulo r1 = new Rectangulo(3.9, 3);
+    Rectangulo r1 = new Rectangulo(3.9, 3, Color.FromArgb(255, 50, 20, 200));
     figuras.Add(r1);
-    Rectangulo r2 = new Rectangulo(5.2, 2);
+    Rectangulo r2 = new Rectangulo(5.2, 2, Color.FromArgb(255, 150, 50, 31));
     figuras.Add(r2);
-    Circulo c1 = new Circulo(4);
+    Circulo c1 = new Circulo(4, Color.FromArgb(255, 30, 120, 10));
     figuras.Add(c1);
-    Circulo c2 = new Circulo(2);
+    Circulo c2 = new Circulo(2, Color.FromArgb(255, 120, 200, 10));
     figuras.Add(c2);
-    TrianguloEquilatero t1 = new TrianguloEquilatero(3);
+    TrianguloEquilatero t1 = new TrianguloEquilatero(3, Color.FromArgb(255, 230, 20, 30));
     figuras.Add(t1);
-    t1 = new TrianguloEquilatero(5);
+    t1 = new TrianguloEquilatero(5, Color.FromArgb(255, 60, 150, 5));
     figuras.Add(t1);
 
 

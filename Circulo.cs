@@ -1,12 +1,15 @@
+using System.Drawing;
+
 namespace P2_2_Figuras;
 
 internal class Circulo : Figura
 {
     protected double _radio;
 
-    public Circulo(double _radio)
+    public Circulo(double _radio, Color color)
     {
         this._radio = _radio;
+        this._color = color;
     }
 
     public override double GetArea()
@@ -29,6 +32,6 @@ internal class Circulo : Figura
     //tostring
     public override string ToString()
     {
-        return $"FIGURA RECTANGULO: RADIO: {_radio} COLOR:  AREA: {GetArea()}";
+        return $"FIGURA RECTANGULO: RADIO: {_radio} COLOR: {_color} AREA: {GetArea()}";
     }
 }
