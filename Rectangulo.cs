@@ -1,6 +1,6 @@
 namespace P2_2_Figuras;
 
-public class Rectangulo : Figura
+internal class Rectangulo : Figura
 {
     protected double _base, _altura;
 
@@ -15,10 +15,10 @@ public class Rectangulo : Figura
         return _base * _altura;
     }
 
-    /*getter --> devuelve enteros
-    public int GetBase()
+    //getter --> devuelve enteros
+    public double GetBase()
     {
-        return _base;
+        return this._base;
     }
 
     //setter
@@ -26,5 +26,10 @@ public class Rectangulo : Figura
     {
         this._altura = altura;
     }
-    */
+
+    //tostring
+    public override string ToString()
+    {
+        return $"FIGURA RECTANGULO: BASE: {_base}  ALTURA: {_altura} COLOR:  AREA: {GetArea}";
+    }
 }
